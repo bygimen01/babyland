@@ -1,0 +1,40 @@
+.hamburger li{
+    list-style-type: none;
+    background-color: #f8f8f8;
+    margin-bottom: 3px;
+
+}
+
+.hamburger a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hamburger a:hover{
+    color: #F72464;
+}
+
+.hamburger {
+    position: absolute;
+    left: -40px;
+    top: 35px;
+    transform: translateX(-50%);
+    opacity: 0;
+
+}
+
+.hamburger--visible{
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+#hamburger2{
+    left: 250px;
+    top: 85px;
+    width: 100%;
+}
+
+.hamburger li, a{
+    z-index: 9999;
+}
